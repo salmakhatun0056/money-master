@@ -3,9 +3,7 @@ function getInputValue(product) {
     const productNumber = productInput.value
     const productAmount = parseInt(productNumber);
     return productAmount;
-
 }
-
 
 document.getElementById('calculate').addEventListener('click', function () {
     const income = getInputValue('income')
@@ -13,24 +11,24 @@ document.getElementById('calculate').addEventListener('click', function () {
     const rent = getInputValue('rent')
     const cloth = getInputValue('clothes')
 
-    const totalAmount = document.getElementById('total-amount')
 
+    const totalAmount = document.getElementById('total-amount')
 
     if (isNaN(totalAmount.innerText)) {
         totalAmount.textContent = 'please enter valid number'
 
     }
+
     else if (totalAmount.innerText > 0) {
         totalAmount.textContent = 'please enter possitive number'
 
     }
+    else if (totalAmount.innerText < income.value) {
+        console.log('hi')
+    }
     else {
         totalAmount.innerText = expenses + rent + cloth
     }
-
-
-
-    // console.log(totalAmount.innerText)
 
     const balanceAmount = document.getElementById('balance-amount')
     balanceAmount.innerText = income - totalAmount.innerText
@@ -50,15 +48,10 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const balanceAmount = document.getElementById('balance-amount')
     remainingAmount.innerText = balanceAmount.innerText - savingAmount.innerText
 
-    // const savingFaild = document.getElementById('balance-fail')
-    // if (savingAmount.innerText < balanceAmount) {
-    //     savingFaild.style.display = 'block'
-    // }
-    // else {
-    //     savingFaild.style.display = 'none'
-    // }
 
-
+    if (savingAmount.innerText > balanceAmount.innerText) {
+        savingAmount.textContent = "You don't have enought money you need"
+    }
 
 })
 
