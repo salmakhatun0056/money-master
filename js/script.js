@@ -13,19 +13,28 @@ document.getElementById('calculate').addEventListener('click', function () {
     const cloth = getInputValue('clothes')
 
     const totalAmount = document.getElementById('total-amount')
-    if (isNaN(totalAmount)) {
-        alert('please type number')
-    }
-    else if (totalAmount > 0) {
-        alert('please send positive number')
-    }
 
     totalAmount.innerText = expenses + rent + cloth
-    console.log(totalAmount.innerText)
+    // console.log(totalAmount.innerText)
 
     const balanceAmount = document.getElementById('balance-amount')
     balanceAmount.innerText = income - totalAmount.innerText
     console.log(balanceAmount.innerText)
+})
+
+document.getElementById('save-btn').addEventListener('click', function () {
+    const save = getInputValue('save')
+    const savingAmount = document.getElementById('saving-amount')
+    savingAmount.innerText = save;
+    const income = getInputValue('income')
+    savingAmount.innerText = income * save / 100
+
+
+
+    const remainingAmount = document.getElementById('remainig-amount')
+    const balanceAmount = document.getElementById('balance-amount')
+    remainingAmount.innerText = balanceAmount.innerText - savingAmount.innerText
+
 })
 
 
