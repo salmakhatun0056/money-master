@@ -17,7 +17,7 @@
     </header>
     <section class="container row mx-auto w-100 mt-5">
         <!-- image added -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 ">
             <img class="w-100" src="image/secrets-to-saving-money.png" alt="">
         </div>
 
@@ -25,7 +25,7 @@
 
             <div class=" row  g-2">
                 <h5 class="text-center col-12 ">Income</h5>
-                <label class="text-end col-12" for="income">Income: <input id="income-input" type="text"></label>
+                <label class="text-end col-12 " for="income">Income: <input id="income-input" type="text"></label>
 
                 <h5 class="text-center col-12">Expenses</h5>
                 <label class="text-end col-12" for="expenses">Expenses: <input id="expenses-input" type="text"></label>
@@ -41,13 +41,18 @@
 
             </div>
 
-            <div class=" col-12 mt-4">
+            <div class=" col-12 mt-4 ">
                 <label for="clothes">Save: <input id="save-input" class="w-25" type="text"> % <button id="save-btn"
                         style=" outline: 0 ;
                 border: 0;" class="bg-info rounded text-light px-4 py-2 ">button</button></label>
             </div>
             <h5 class="text-center col-12 m-3">Saving Amount: <span id="saving-amount">0</span> </h5>
             <h5 class="text-center col-12">Remaining Balance: <span id="remainig-amount">0</span> </h5>
+
+            <div class="notify-section">
+                <p id="balance-fail" class="notify">❌ Didn't save the money, Please try again</p>
+
+            </div>
 
     </section>
 

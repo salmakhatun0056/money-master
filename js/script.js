@@ -6,6 +6,7 @@ function getInputValue(product) {
 
 }
 
+
 document.getElementById('calculate').addEventListener('click', function () {
     const income = getInputValue('income')
     const expenses = getInputValue('expenses')
@@ -14,7 +15,21 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     const totalAmount = document.getElementById('total-amount')
 
-    totalAmount.innerText = expenses + rent + cloth
+
+    if (isNaN(totalAmount.innerText)) {
+        totalAmount.textContent = 'please enter valid number'
+
+    }
+    else if (totalAmount.innerText > 0) {
+        totalAmount.textContent = 'please enter possitive number'
+
+    }
+    else {
+        totalAmount.innerText = expenses + rent + cloth
+    }
+
+
+
     // console.log(totalAmount.innerText)
 
     const balanceAmount = document.getElementById('balance-amount')
@@ -27,14 +42,25 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const savingAmount = document.getElementById('saving-amount')
     savingAmount.innerText = save;
     const income = getInputValue('income')
-    savingAmount.innerText = income * save / 100
 
+    savingAmount.innerText = income * save / 100
 
 
     const remainingAmount = document.getElementById('remainig-amount')
     const balanceAmount = document.getElementById('balance-amount')
     remainingAmount.innerText = balanceAmount.innerText - savingAmount.innerText
 
+    // const savingFaild = document.getElementById('balance-fail')
+    // if (savingAmount.innerText < balanceAmount) {
+    //     savingFaild.style.display = 'block'
+    // }
+    // else {
+    //     savingFaild.style.display = 'none'
+    // }
+
+
+
 })
+
 
 
