@@ -15,29 +15,29 @@
     <header>
         <h1 class="text-center mt-3 text-info">Money Master💰 </h1>
     </header>
-    <section class="container row ">
+    <section class="container row mx-auto w-100">
         <!-- image added -->
-        <div class="col-lg-8 ">
-            <img class="w-75" src="image/secrets-to-saving-money.png" alt="">
+        <div class="col-lg-6">
+            <img class="w-100" src="image/secrets-to-saving-money.png" alt="">
         </div>
 
-        <div style="background-color: #F8F8F8; " class="col-lg-4 container p-5">
+        <div style="background-color: #F8F8F8; " class="col-lg-4  container p-5">
 
             <div class=" row  g-2">
                 <h5 class="text-center col-12 ">Income</h5>
-                <label class="text-end col-12" for="income">Income: <input type="text"></label>
+                <label class="text-end col-12" for="income">Income: <input id="income-input" type="text"></label>
 
                 <h5 class="text-center col-12">Expenses</h5>
-                <label class="text-end col-12" for="expenses">Expenses: <input type="text"></label>
-                <label class="text-end col-12" for="rent">Rent: <input type="text"></label>
-                <label class="text-end col-12" for="clothes">Clothes: <input type="text"></label>
+                <label class="text-end col-12" for="expenses">Expenses: <input id="expenses-input" type="text"></label>
+                <label class="text-end col-12" for="rent">Rent: <input id="rent-input" type="text"></label>
+                <label class="text-end col-12" for="clothes">Clothes: <input id="clothes-input" type="text"></label>
 
                 <div class="text-center">
-                    <button style=" outline: 0 ;
-                border: 0;" class="bg-info rounded text-light  px-4  py-2 ">button</button>
+                    <button id="calculate" style=" outline: 0 ;
+                border: 0;" class="bg-info rounded text-light  px-4  py-2 ">Calculate</button>
                 </div>
-                <h5 class="text-center col-12">Total Expenses: 5500</h5>
-                <h5 class="text-center col-12">Balance: 4500</h5>
+                <h5 class="text-center col-12">Total Expenses: <span id="total-amount">0</span></h5>
+                <h5 class="text-center col-12">Balance: <span id="balance-amount">0</span></h5>
 
             </div>
 
@@ -45,8 +45,8 @@
                 <label for="clothes">Clothes: <input class="w-25" type="text"> % <button style=" outline: 0 ;
                 border: 0;" class="bg-info rounded text-light px-4 py-2 ">button</button></label>
             </div>
-            <h5 class="text-center col-12 m-3">Saving Amount: 2000 </h5>
-            <h5 class="text-center col-12">Remaining Balance: 2500 </h5>
+            <h5 class="text-center col-12 m-3">Saving Amount: <span id="saving-amount">0</span> </h5>
+            <h5 class="text-center col-12">Remaining Balance: <span id="remainig-amount">0</span> </h5>
 
     </section>
 
