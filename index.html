@@ -12,57 +12,42 @@
 </head>
 
 <body>
-    <section class="container">
+    <header>
         <h1 class="text-center mt-3 text-info">Money Master💰 </h1>
-        <div class="row gx-5">
-            <div class="col-lg-6">
-                <img class="w-100" src="image/secrets-to-saving-money.png" alt="">
-            </div>
+    </header>
+    <section class="container row">
+        <!-- image added -->
+        <div class="col-lg-6">
+            <img class="w-100" src="image/secrets-to-saving-money.png" alt="">
+        </div>
 
-            <div style="background-color: #F8F8F8;" class="col-lg-6 container">
+        <div style="background-color: #F8F8F8;" class="col-lg-4 container p-5">
 
-                <div class="text-center mt-5">
-                    <div>
-                        <h6>Income</h6>
-                    </div>
-                    <div class="mb-3">
+            <div class=" row border g-2">
+                <h4 class="text-center col-12 ">Income</h4>
+                <label class="text-end col-12" for="income">Income: <input type="text"></label>
 
-                        <label for="income">Income:</label>
+                <h4 class="text-center col-12">Expenses</h4>
+                <label class="text-end col-12" for="expenses">Expenses: <input type="text"></label>
+                <label class="text-end col-12" for="rent">Rent: <input type="text"></label>
+                <label class="text-end col-12" for="clothes">Clothes: <input type="text"></label>
 
-                        <input id="income-number" type="text" min="0" value="1000">
-                    </div>
-                    <h6 class="mb-3">Experience</h6>
 
-                    <div class="mb-3 ">
-                        <label for="Food">Food:</label>
-                        <input id="food-number" type="text" min="0" value="3000">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="rent">Rent:</label>
-                        <input id="rent-number" type="text" min="0" value="2000">
-                    </div>
-                    <div class="mb-3">
-                        <label for="clothes">Clothes:</label>
-                        <input id="clothes-number" type="text" min="0" value="500">
-                    </div>
-
-                    <div>
-                        <button style=" outline: 0;
+                <!-- <div>
+                    <button style=" outline: 0;
                     border: 0;" class="bg-info rounded text-light mb-3  px-4 py-2">button</button>
-                        <h6>Total Expenses: 5500 </h6>
-                        <h6 class="mb-3">Balance: 4500</h6>
-                        <label for="save">save: </label>
-                        <input style="width: 70px;" id="save-number" type="text" min="0" value="20">
-                        <label for="%">%</label>
-                        <button style=" outline: 0;
+                    <h6>Total Expenses: 5500 </h6>
+                    <h6 class="mb-3">Balance: 4500</h6>
+                    <label for="save">save: </label>
+                    <input style="width: 70px;" id="save-number" type="text" min="0" value="20">
+                    <label for="%">%</label>
+                    <button style=" outline: 0;
                     border: 0;" class="bg-info rounded text-light mb-3  px-4 py-2 mx-2">Save</button>
-                        <h6>Saving Amount: 2000 </h6>
-                        <h6>Remaining Balance: 2500 </h6>
-                    </div>
-                </div>
-
+                    <h6>Saving Amount: 2000 </h6>
+                    <h6>Remaining Balance: 2500 </h6>
+                </div> -->
             </div>
+
         </div>
 
     </section>
