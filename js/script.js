@@ -23,9 +23,7 @@ document.getElementById('calculate').addEventListener('click', function () {
         totalAmount.textContent = 'please enter possitive number'
 
     }
-    else if (totalAmount.innerText < income.value) {
-        console.log('hi')
-    }
+
     else {
         totalAmount.innerText = expenses + rent + cloth
     }
