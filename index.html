@@ -29,19 +29,24 @@
 
             <div class=" row  g-2">
                 <h5 class="text-center col-12 ">Income</h5>
-                <label class="text-end col-12 " for="income">Income: <input id="income-input" type="text"></label>
+                <label class="text-end col-12 " for="income">Income: <input placeholder="Please enter your amount"
+                        id="income-input" type="text"></label>
 
                 <h5 class="text-center col-12">Expenses</h5>
-                <label class="text-end col-12" for="expenses">Expenses: <input id="expenses-input" type="text"></label>
-                <label class="text-end col-12" for="rent">Rent: <input id="rent-input" type="text"></label>
-                <label class="text-end col-12" for="clothes">Clothes: <input id="clothes-input" type="text"></label>
+                <label class="text-end col-12" for="expenses">Expenses: <input placeholder="Please enter your Amount"
+                        id="expenses-input" type="text"></label>
+                <label class="text-end col-12" for="rent">Rent: <input placeholder="Please enter your Amount"
+                        id="rent-input" type="text"></label>
+                <label class="text-end col-12" for="clothes">Clothes: <input placeholder="Please enter your Amount"
+                        id="clothes-input" type="text"></label>
 
                 <div class="text-center mt-4">
-                    <button id="calculate" style=" outline: 0 ;
+                    <button id="calculate-btn" style=" outline: 0 ;
                 border: 0;" class="bg-info rounded text-light  px-4  py-2 ">Calculate</button>
                 </div>
-                <h5 class="text-center col-12">Total Expenses: <span id="total-amount">0</span></h5>
-                <h5 class="text-center col-12">Balance: <span id="balance-amount">0</span></h5>
+                <h5 class="text-center col-12">Total Expenses: <span id="total-field">0</span></h5>
+                <p id="error" class="text-center">This is string number</p>
+                <h5 class="text-center col-12">Balance: <span id="balance-field">0</span></h5>
 
             </div>
 
@@ -50,8 +55,8 @@
                         style=" outline: 0 ;
                 border: 0;" class="bg-info rounded text-light px-4 py-2 ">button</button></label>
             </div>
-            <h5 class="text-center col-12 m-3">Saving Amount: <span id="saving-amount">0</span> </h5>
-            <h5 class="text-center col-12">Remaining Balance: <span id="remainig-amount">0</span> </h5>
+            <h5 class="text-center col-12 m-3">Saving Amount: <span id="saving-field">0</span> </h5>
+            <h5 class="text-center col-12">Remaining Balance: <span id="remainig-field">0</span> </h5>
 
 
     </section>
