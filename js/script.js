@@ -67,7 +67,13 @@ document.getElementById('save-btn').addEventListener('click', function () {
     }
 })
 
+//     if (savingAmount.innerText > balanceAmount.innerText) {
+//         savingAmount.textContent = "You don't have enought money"
+//     }
+//     else {
+//         savingAmount.innerText = income * save / 100
 
+//     }
 
 
 
